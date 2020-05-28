@@ -34,7 +34,7 @@ body {
 #app{
   margin: auto;
   max-width: 375px;
-  min-height: 665px;
+  min-height: 80vh;
   padding: 10px;
   border: 1px red solid;
 }
@@ -42,6 +42,7 @@ body {
 .dots{
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 }
 .yellow{
   margin: 5px;
@@ -65,6 +66,7 @@ body {
   border-radius: 6px;
 }
 h1{
-  margin: 0;
+  margin: 0 0 20px 0;
+  font-size: 45px;
 }
 </style>
