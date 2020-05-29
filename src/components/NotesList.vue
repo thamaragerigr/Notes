@@ -1,6 +1,10 @@
 <template>
   <div class="NotesList">
-      <button class="NotesList-createButton" @click="createNote">New note</button>
+      <button 
+        class="NotesList-createButton" 
+        @click="createNote">
+        New note
+      </button>
      <nav>
          <p v-if="!notes.length">No notes saved</p>
          <ul class="NotesList-list" v-if="notes.length">
@@ -16,9 +20,20 @@
          </ul>
      </nav>
      <div v-if="currentNote">
-         <button @click="deleteNote" class="NotesList-createButton"><i class="far fa-trash-alt"></i></button>
-         <input type="text" v-model="currentNote.title" ref="noteTitle">
-         <textarea v-model="currentNote.content" cols="30" rows="10"></textarea>
+         <button 
+            @click="deleteNote" 
+            class="NotesList-createButton">
+                <i class="far fa-trash-alt"></i>
+         </button>
+         <input 
+            type="text" 
+            v-model="currentNote.title" 
+            ref="noteTitle">
+         <textarea 
+            v-model="currentNote.content" 
+            cols="30" 
+            rows="10">
+         </textarea>
      </div>
   </div>
 </template>
@@ -29,7 +44,7 @@ export default {
   data() {
      return {
         notes: [],
-        currentNote: null
+        currentNote: null,
      }
   },
   methods: {
@@ -74,7 +89,7 @@ export default {
     background: linear-gradient(180deg, rgba(48, 68, 78, 0.5) 63.02%, rgba(48, 68, 78, 0) 100%);
     box-shadow: 0px 1px 14px #19282F;
     border-radius: 100px 100px 0px 0px;
-    /* height: 100vh; */
+    min-height: 500px;
 }
 
 .active{
@@ -129,6 +144,7 @@ input{
     margin: 10px;
     font-size: 20px;
     font-weight: lighter;
+    width: 160px;
 }
 
 textarea{
@@ -142,5 +158,7 @@ textarea{
     margin: 10px;
     font-size: 20px;
     font-weight: lighter;
+    height: 200px;
+    width: 220px;
 }
 </style>
