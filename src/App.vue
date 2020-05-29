@@ -25,7 +25,7 @@ export default {
 
 <style>
 body {
-  background: #22343C;
+  background: #1A262B;
   color: white;
   font-family: 'Quicksand', sans-serif;
   text-align: center;
