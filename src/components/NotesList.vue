@@ -16,7 +16,7 @@
          </ul>
      </nav>
      <div v-if="currentNote">
-         <button @click="deleteNote" class="NotesList-createButton">trash</button>
+         <button @click="deleteNote" class="NotesList-createButton"><i class="far fa-trash-alt"></i></button>
          <input type="text" v-model="currentNote.title" ref="noteTitle">
          <textarea v-model="currentNote.content" cols="30" rows="10"></textarea>
      </div>
@@ -36,7 +36,7 @@ export default {
       createNote(){
           const newNote = 
           {
-              title: '',
+              title: 'New Note',
               content: ''
           };
           this.notes.push(newNote);

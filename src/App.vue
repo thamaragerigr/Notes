@@ -36,7 +36,7 @@ body {
   max-width: 375px;
   min-height: 80vh;
   padding: 10px;
-  border: 1px red solid;
+  /* border: 1px red solid; */
 }
 
 .dots{
