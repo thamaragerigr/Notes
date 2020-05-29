@@ -28,11 +28,13 @@
          <input 
             type="text" 
             v-model="currentNote.title" 
-            ref="noteTitle">
+            ref="noteTitle"
+            placeholder="Title">
          <textarea 
             v-model="currentNote.content" 
             cols="30" 
-            rows="10">
+            rows="10"
+            placeholder="Write your note here!">
          </textarea>
      </div>
   </div>
@@ -156,7 +158,7 @@ textarea{
     font-family: 'Quicksand', sans-serif;
     padding: 10px 25px;
     margin: 10px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: lighter;
     height: 200px;
     width: 220px;
